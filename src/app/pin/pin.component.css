@@ -1,0 +1,22 @@
+input[name="pin"] {
+    -webkit-text-security: disc;
+}
+
+.form-container {
+    margin: 8px auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+form * {
+    margin: 4px auto;
+}
+
+label[for="pin"]::after {
+    content: ':';
+}

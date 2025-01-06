@@ -1,0 +1,9 @@
+<div class="atm-container">
+    <div class="form-container">
+        <form (ngSubmit)="onSubmit()" #pinForm="ngForm">
+            <label for="pin">PIN</label>
+            <input type="text" ngModel name="pin" #pin="ngModel" maxlength="4" pattern="\d{4}" required (keydown)="validatePin($event)">
+            <button class="btn btn-primary" type="submit" [disabled]="pinForm.invalid">Submit</button>
+        </form>
+    </div>
+</div>

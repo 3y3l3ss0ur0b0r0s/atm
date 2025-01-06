@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --bank-color: #25A3ED;
+    --green: #58e856;
+}
+
+.bank-name {
+    width: auto;
+    text-align: center;
+    background-color: var(--bank-color);
+    color: white;
+    padding: 4px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.atm-container {
+    background-color: hsl(from var(--bank-color) h 100% 88%);
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    width: 4em;
+    font-size: x-large;
+}
+
+button {
+    width: fit-content;
+    background-color:  var(--green);
+    border: 1px solid hsl(from var(--green) h s 30%);
+    padding: 4px 8px;
+    font-family: inherit;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+button:not([disabled]):hover, button:not([disabled]):focus {
+    transform: scale(1.07, 1.07);
+    background-color: hsl(from var(--green) h s 60%)
+}
+
+button:not([disabled]):active {
+    transform: scale(0.95, 0.95);
+    background-color: hsl(from var(--green) h s 40%);
+}
+
+button:disabled {
+    background-color: #666;
+    border: 1px solid #333;
+    color: #aaa;
+}

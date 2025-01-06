@@ -1,0 +1,57 @@
+.atm-container > div {
+    background-color: hsl(from var(--bank-color) h s 99%);
+    padding: 2px 20px;
+    text-align: center;
+}
+
+#accountInformation {
+    text-align: left;
+}
+
+.account-info {
+    margin: 30px auto;
+    border-top: 1px solid var(--bank-color);
+}
+
+.balance::before {
+    content: '$';
+}
+
+form {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: top;
+    text-align: center;
+}
+
+form label::after {
+    content: ':';
+    margin-right: 4px;
+}
+
+form fieldset {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+}
+
+form .amount {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    height: fit-content;
+    text-align: end;
+}
+
+form button {
+    font-size: large;
+    height: fit-content;
+    align-self: center;
+}
+
+#signOut {
+    margin: 20px auto;
+}
